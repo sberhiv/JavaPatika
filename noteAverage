@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class gradeAverage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int mat, fiz, kim, türkçe, tarih, müzik;
+Scanner input= new Scanner(System.in);
+System.out.println("Matematik notunuz: ");
+mat= input.nextInt();
+System.out.println("Fizik notunuzu giriniz: ");
+fiz= input.nextInt();
+System.out.println("Kimya notunuzu giriniz:");
+kim= input.nextInt();
+System.out.println("Türkçe notunuzu giriniz: ");
+türkçe= input.nextInt();
+System.out.println("Tarih notunuzu giriniz:");
+tarih= input.nextInt();
+System.out.println("Müzik notunuzu giriniz: ");
+müzik= input.nextInt();
+
+int toplam= ((mat+fiz+kim+türkçe+tarih+müzik)/6);
+System.out.println("Not ortalamanız:"+ toplam);
+
+String durum= toplam >=60 ? "Sınıfı geçtiniz": "Sınıfta kaldınız";
+System.out.println(durum);
+
+
+
+	}
+
+}
