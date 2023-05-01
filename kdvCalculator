@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class kdvCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double tutar, kdvliTutar, kdvTutar;
+		
+		Scanner inp= new Scanner(System.in);
+		System.out.print("Ücret tutarını giriniz: ");
+		tutar= inp.nextDouble();
+		
+		
+		
+		if (tutar<=1000) {
+			kdvTutar=0.18;
+			kdvliTutar= tutar+ (tutar*kdvTutar);
+			System.out.println("KDV'siz tutar= "+ tutar); 
+			System.out.println("KDV'li tutar= "+ kdvliTutar);
+			System.out.println("KDV Tutarı= "+ (kdvliTutar-tutar));
+			
+		} else {
+			kdvTutar= 0.08;
+			kdvliTutar = tutar+ (tutar*kdvTutar);
+			System.out.println("KDV'siz tutar= "+ tutar); 
+			System.out.println("KDV'li tutar= "+ kdvliTutar);
+			System.out.println("KDV Tutarı= "+ (kdvliTutar-tutar));
+		}
+		
+
+
+	}
+
+}
